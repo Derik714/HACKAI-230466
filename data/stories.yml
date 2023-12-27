@@ -1,0 +1,82 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: complaint form path 1
+  steps:
+  - intent: complaint_form
+  - action: utter_askname
+- story: complaint form path 2
+  steps:
+    - intent: my_name_is
+    - action: action_name2
+
+- story: Get_productdef
+  steps:
+    - action: utter_greetings
+    - intent: product_des
+      entities:
+      - shoes: large
+    - slot_was_set:
+      - shoes: large
+    - action: action_productdef
+
+  # - intent: ask_shoe_size
+  # - actions: utter_ask_shoe_size
+
+- story: Hack_AI
+  steps:
+  - intent: check_availability
+  - action: action_productavail
+
+
+  - intent: promotions
+  - action: utter_promotions
+
+  - intent: returns_exchanges
+  - action: utter_returns_exchanges
+
+- story: Inequiry
+  steps:
+  - intent: google_lens
+  - action: utter_google_lens
+
+  - intent: inquire_quality_brands
+  - action: utter_inquire_quality_brands
+
+  - intent: inquire_repair_policy
+  - action: utter_inquire_repair_policy
+
+  # - intent: store_hours
+  # - actions: utter_store_hours
+
+
+
+  - intent: order_tracking
+  - action: utter_order_tracking

@@ -1,0 +1,104 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - my_name_is
+  - order_id
+  - complaint_form
+  - product_des:
+      use_entities: shoes
+  - ask_shoe_occasion
+  - ask_shoe_color_preference
+  - check_availability
+  # - product_inquiry
+  - price_inquiry
+  - order_placement
+  - promotions
+  - returns_exchanges
+  - store_location
+  # - store_hours
+  - recommendations
+  - order_tracking
+  - google_lens
+  - inquire_quality_brands
+  # - inquire_unique_design_brands
+  - inquire_repair_policy
+  - inquire_about_discounts_on_new_arrivals
+
+actions:
+  - action_name
+  - action_name2
+  - action_find_orderid
+  - action_store_random_message
+  - action_productdef
+  - action_productavail
+
+entities:
+  - name
+  - oid
+  - shoes
+
+slots:
+  shoes:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: shoes
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_did_that_help:
+  - text: "Did that help you?"
+  utter_askname:
+  - text: "I see, can I please know your name?"
+  utter_happy:
+  - text: "Great, carry on!"
+  utter_goodbye:
+  - text: "Bye"
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_ask_shoe_color_preference:
+  - text: "Nice choice! Your preference for shoe color is good."
+  utter_ask_shoe_occasion:
+  - text: "Great choice! Your shoe size is ."
+  utter_check_availability:
+  - text: "I will check and confirm if we have [brand] [model] shoes in our store."
+  - text: "I'll check for updates on the availability of [type] shoes in [color]."
+  utter_order_placement:
+  - text: "Certainly! We offer customization options for some products. Please specify any specific requirements or customization preferences you have, and our team will guide you through the process."
+  - text: "When ordering [brand] [type] shoes, please note any special considerations in the customization or sizing. If you have specific preferences, let us know during the ordering process, and we'll do our best to accommodate them."
+  utter_promotions:
+  - text: "Certainly! Here are the details about our current sales and promotions:\n[Promotion_Details]. For more information, you can visit our website or contact our store."
+  - text: "Yes, we have exclusive in-store promotions. Visit our physical store to learn about special in-store offers and promotions available to our customers."
+  utter_returns_exchanges:
+  - text: "To ensure you're fully satisfied with your purchase, we have a straightforward process for returning a pair of [type] shoes. Please follow our user-friendly return process, which is outlined on our website or can be explained in detail by contacting our store. We appreciate your understanding and are here to make your return experience as smooth as possible."
+  - text: "To initiate a return, you'll need your order number and details about the items being returned. This information is crucial for ensuring a smooth return process. Instructions on initiating a return can be found on our website, or for personalized assistance, feel free to contact our store. We appreciate your understanding and look forward to assisting you throughout the return process."
+  utter_store_location:
+  - text: "Shop location is in mnnit cap"
+  utter_recommendations:
+  - text: "Recommendation is stricly yahi kaeam NO"
+  utter_order_tracking:
+  - text: "Your Order is in the way"
+  utter_google_lens:
+  - text: "Certainly! Google Lens is a powerful tool for visual searches. It allows you to use your phone's camera to explore and gather information about objects, landmarks, and more. To get started, open your Google Lens app, point your camera at what you want to explore, and let Google Lens provide you with relevant details. If you have any questions or need assistance, feel free to ask!"
+  utter_inquire_quality_brands:
+  - text: "Brands Name are :\n1) Nike\n2) Adidas\n3) Converse\nBut the best choice is Nike shoes"
+  utter_inquire_repair_policy:
+  - text: "We're here to help with shoe repairs! Our repairs come with a [warranty_period]-month guarantee. If your shoes need fixing, our skilled team will take a look and suggest the best solution. Some repairs may have fees, and it usually takes about [turnaround_time] to get them back to you. If you have any questions or need assistance, just reach out to our customer service. We want to make sure your shoes stay in great shape!"
+  utter_inquire_about_discounts_on_new_arrivals:
+  - text: "Yes, our store provides the best discount offers in the market and the greatest discount offers during festivals."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,154 @@
+version: "3.1"
+nlu:
+  - lookup: shoes
+    examples: |
+      - Air Force 1
+      - Air Max 1
+      - Air Max 90
+      - Air Max 97
+      - Air Max 270
+      - Air Max 720
+      - Air Max Plus
+      - Air Max TN
+      - Air VaporMax
+      - React Element 55
+      - React Element 87
+      - Blazer
+      - Dunk
+      - SB Dunk
+      - Air Presto
+      - Zoom Pegasus
+      - Zoom Fly
+      - Zoom Vaporfly
+      - Free RN
+      - Joyride Run
+      - Air Zoom Structure
+      - Air Zoom Vomero
+      - Nike SB Janoski
+      - Nike SB Stefan Janoski Max
+      - Nike SB Dunk Low
+      - Nike SB Dunk High
+      - Nike SB Blazer Low
+      - Nike SB Blazer Mid
+      - Nike SB GTS Return
+      - Nike SB Nyjah
+      - Nike SB Bruin
+      - Nike SB Air Max
+      - Nike SB Delta Force
+      - Nike SB Zoom
+      - Nike SB Alleyoop
+      - Nike SB Team Classic
+      - Nike SB Charge
+      - Nike SB Check
+      - Nike SB Check Solar
+      - Nike SB Check Solarsoft
+      - Nike SB Portmore
+      - Nike SB Solarsoft
+      - Nike SB Solarsoft Portmore
+      - Nike SB Solarsoft Canvas
+      - Nike SB Zoom Stefan Janoski
+      - Nike SB Zoom Janoski
+      - Nike SB Check Solar CNVS
+      - Nike SB Check Solarsoft Canvas
+      - Nike SB Charge Canvas
+      - Nike SB Check Canvas
+      - Nike SB Solarsoft Portmore II
+      - Nike SB Team Classic
+      - Nike SB Gato
+      - Nike SB Charge Canvas Premium
+      - Nike SB Air Max Stefan Janoski 2
+      - Nike SB Team Classic
+      - Nike SB Nyjah Free
+      - Nike SB Shane
+      - Nike SB Alleyoop
+      - Nike SB Zoom Stefan Janoski Slip RM
+      - Nike SB Zoom Stefan Janoski Canvas RM
+      - Nike SB Air Max Bruin Vapor
+      - Nike SB Zoom Blazer Mid
+      - Nike SB Zoom Blazer Low
+      - Nike SB Zoom Blazer Mid Premium
+      - Nike SB Zoom Blazer Chukka XT
+      - Nike SB Zoom Blazer Mid ISO
+      - Nike SB Zoom Bruin ISO
+      - Nike SB Zoom Stefan Janoski Premium High Tape
+      - Nike SB Zoom Stefan Janoski OG
+      - Nike SB Zoom Stefan Janoski RM SE
+      - Nike SB Zoom Janoski Canvas RM
+      - Nike SB Zoom Janoski Slip RM
+      - Nike SB Nyjah Free 2
+      - Nike SB Nyjah Free 2 Premium
+      - Nike SB Nyjah Free 2 ISO
+      - Nike SB Nyjah Free ISO
+      - Nike SB Nyjah Free Premium
+      - Nike SB Nyjah Free PRM
+      - Nike SB Check Solarsoft Canvas
+      - Nike SB Charge Canvas Premium
+      - Nike SB Check Canvas
+      - Nike SB Air Max Stefan Janoski 2
+      - Nike SB Air Max Stefan Janoski 2 Moc
+      - Nike SB Zoom Janoski Slip RM
+      - Nike SB Zoom Janoski Canvas RM
+      - Nike SB Zoom Blazer Mid
+      - Nike SB Zoom Blazer Low
+      - Nike SB Zoom Blazer Mid Premium
+      - Nike SB Zoom Blazer Chukka XT
+      - Nike SB Zoom Blazer Mid ISO
+      - Nike SB Zoom Bruin ISO
+      - Nike SB Zoom Stefan Janoski Premium High Tape
+      - Nike SB Zoom Stefan Janoski OG
+      - Nike SB Zoom Stefan Janoski RM SE
+      - Nike SB Zoom Janoski Canvas RM
+      - Nike SB Zoom Janoski Slip RM
+      - Nike SB Nyjah Free 2
+      - Nike SB Nyjah Free 2 Premium
+      - Nike SB Nyjah Free 2 ISO
+      - Nike SB Nyjah Free ISO
+      - Nike SB Nyjah Free Premium
+      - Nike SB Nyjah Free PRM
+      - Air Zoom Pegasus
+      - Nike React Infinity Run Flyknit
+      - Nike Joyride Run Flyknit
+      - Nike Free RN
+      - Nike Free RN Flyknit
+      - Nike Air Zoom Structure
+      - Nike Air Zoom Vomero
+      - Nike Zoom Pegasus Turbo
+      - Nike Zoom Fly
+      - Nike ZoomX Vaporfly NEXT%
+      - Nike React Phantom Run Flyknit
+      - Nike Air Max 1
+      - Nike Air Max 90
+      - Nike Air Max 95
+      - Nike Air Max 97
+      - Nike Air Max 270
+      - Nike Air Max 720
+      - Nike Air Max Plus
+      - Nike Air Max TN
+      - Nike Air VaporMax
+      - Nike SB Dunk
+      - Nike Dunk
+      - Nike Blazer
+      - Nike Air Force 1
+      - Nike Air Presto
+      - Nike Air Huarache
+      - Nike Shox
+      - Nike Cortez
+      - Nike Air Trainer
+      - Nike Air Flight
+      - Nike Air Max2 Light
+      - Nike Air Yeezy
+      - Nike Air Foamposite
+      - Nike Air More Uptempo
+      - Nike Air Griffey Max
+      - Nike Air Penny
+      - Nike Air Zoom Generation
+      - Nike LeBron
+      - Nike KD
+      - Nike Kyrie
+      - Nike Kobe
+      - Nike Zoom Freak
+      - Nike Zoom Rev
+      - Nike Zoom Live
+      - Nike Zoom Kobe
+      - Nike Zoom Fly
+     

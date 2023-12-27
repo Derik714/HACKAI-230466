@@ -1,0 +1,451 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: complaint_form
+  examples: |
+    - Hello I have a complaint to register
+    - I want to complain about a product
+    - I want to complain about your product
+    - I need to file a complaint regarding the product
+    - Can I register a complaint about the product?
+    - I'd like to make a complaint about the product
+    - How do I go about complaining about the product?
+    - This is unacceptable; I want to complain
+    - I'm dissatisfied and want to register a complaint
+    - What's the process for making a complaint about your product?
+    - Is there a way to escalate a complaint about the product?
+    - I need to voice my dissatisfaction; I want to complain
+    - I'm not happy with the product, and I want to complain
+    - I want to formally register a complaint about the product
+    - Can you help me with registering a complaint about your product?
+    - I'm having issues, and I want to complain about the product
+    - Who do I contact to make a formal complaint about the product?
+    - I'd like to express my concerns; I want to complain
+    - I need to raise a complaint regarding the product
+    - This is a formal complaint about the product
+    - I'm not satisfied, and I want to complain about the product
+    - Can you assist me in filing a complaint about your product?
+    - I want to lodge a complaint about the product
+    - I want to bring a problem to your attention; I want to complain
+    - I want to register my dissatisfaction with the product
+    - How can I officially complain about the product?
+- intent: order_id
+  examples: |
+    - It is [A1]{"entity":"oid", "value":"A1"}
+    - The order id is [B2]{"entity":"oid", "value":"B2"}
+    - The order id of my order is [C3]{"entity":"oid", "value":"C3"}
+    - My order id is [D4]{"entity":"oid", "value":"D4"}
+    - The order id is [E5]{"entity":"oid", "value":"E5"}
+    - [D4]{"entity":"oid", "value":"D4"}
+    - its [E5]{"entity":"oid", "value":"E5"}
+- intent: my_name_is
+  examples: |
+    - My name is [Hrithiman]{"entity":"name", "value":"Hrithiman"}
+    - It is [Hrithiman Guha]{"entity":"name", "value":"Hrithiman Guha"}
+    - [Ayush Singh Gour]{"entity":"name", "value":"Ayush Singh Gour"}
+    - My name's [ayush singh gour]{"entity":"name","value":"ayush singh gour"}
+- lookup: name
+    - data/names.yml
+- intent: product_des
+  examples: |
+    - Can I have a description for [air force one]{"entity":"shoes","value":"air force one"}?
+    - I want to know about [air force one]{"entity":"shoes","value":"air force one"}.
+    - What is [air force one]{"entity":"shoes","value":"air force one"} like?
+    - How are [air force one]{"entity":"shoes","value":"air force one"}?
+    - Can I get some insight about [air force one]{"entity":"shoes","value":"air force one"}?
+    - What's [air force one]{"entity":"shoes","value":"air force one"} like?
+    - Describe [air force one]{"entity":"shoes","value":"air force one"} for me.
+    - Tell me about [air force one]{"entity":"shoes","value":"air force one"}.
+    - Explain [air force one]{"entity":"shoes","value":"air force one"} to me.
+    - What can you share about [air force one]{"entity":"shoes","value":"air force one"}?
+    - Provide details on [air force one]{"entity":"shoes","value":"air force one"}.
+    - How would you describe [air force one]{"entity":"shoes","value":"air force one"}?
+    - Give me information on [air force one]{"entity":"shoes","value":"air force one"}.
+    - I'm curious about [air force one]{"entity":"shoes","value":"air force one"} - what can you tell me?
+    - Share insights on [air force one]{"entity":"shoes","value":"air force one"}.
+    - Describe [iphone 12]{"entity":"shoes","value":"iphone 12"} in simple terms.
+    - What's [iphone 12]{"entity":"shoes","value":"iphone 12"} all about?
+    - Explain [iphone 12]{"entity":"shoes","value":"iphone 12"} to me.
+    - Can you describe [iphone 12]{"entity":"shoes","value":"iphone 12"} briefly?
+    - Provide details on [iphone 12]{"entity":"shoes","value":"iphone 12"}.
+    - Tell me about [macbook pro]{"entity":"shoes","value":"macbook pro"} in simple terms.
+    - How would you describe [macbook pro]{"entity":"shoes","value":"macbook pro"}?
+    - Share insights on [macbook pro]{"entity":"shoes","value":"macbook pro"}.
+    - Describe [macbook pro]{"entity":"shoes","value":"macbook pro"} for me.
+    - What can you tell me about [macbook pro]{"entity":"shoes","value":"macbook pro"}?
+    - can I have a description for [air force one]{"entity":"shoes","value":"air force one"}
+    - i want to know about [air force one]{"entity":"shoes","value":"air force one"}
+    - what is [air force one]{"entity":"shoes","value":"air force one"} like
+    - how are [air force one]{"entity":"shoes","value":"air force one"}
+    - can I get some insight about [air force one]{"entity":"shoes","value":"air force one"}
+    - what's [air force one]{"entity":"shoes","value":"air force one"} like
+    - describe [air force one]{"entity":"shoes","value":"air force one"} for me
+    - tell me about [air force one]{"entity":"shoes","value":"air force one"}
+    - explain [air force one]{"entity":"shoes","value":"air force one"} to me
+    - what can you share about [air force one]{"entity":"shoes","value":"air force one"}
+    - provide details on [air force one]{"entity":"shoes","value":"air force one"}
+    - how would you describe [air force one]{"entity":"shoes","value":"air force one"}
+    - give me information on [air force one]{"entity":"shoes","value":"air force one"}
+    - i'm curious about [air force one]{"entity":"shoes","value":"air force one"} - what can you tell me
+    - share insights on [air force one]{"entity":"shoes","value":"air force one"}
+    - describe [iphone 12]{"entity":"shoes","value":"iphone 12"} in simple terms
+    - what's [iphone 12]{"entity":"shoes","value":"iphone 12"} all about
+    - explain [iphone 12]{"entity":"shoes","value":"iphone 12"} to me
+    - can you describe [iphone 12]{"entity":"shoes","value":"iphone 12"} briefly
+    - provide details on [iphone 12]{"entity":"shoes","value":"iphone 12"}
+    - tell me about [macbook pro]{"entity":"shoes","value":"macbook pro"} in simple terms
+    - how would you describe [macbook pro]{"entity":"shoes","value":"macbook pro"}
+    - share insights on [macbook pro]{"entity":"shoes","value":"macbook pro"}
+    - describe [macbook pro]{"entity":"shoes","value":"macbook pro"} for me
+    - what can you tell me about [macbook pro]{"entity":"shoes","value":"macbook pro"}
+
+- lookup: shoes
+    - data/addidas.yml
+- lookup: shoes
+    - data/converse.yml
+- lookup: shoes
+    - data/nike.yml
+
+
+
+- intent: check_availability
+  examples: |
+    - Do you have [air force one]{"entity":"shoes","value":"air force one"} shoes in stock?
+    - Are [air force one]{"entity":"shoes","value":"air force one"} shoes available?
+    - What [air force one]{"entity":"shoes","value":"air force one"} shoes do you have?
+    - Are there any [air force one]{"entity":"shoes","value":"air force one"} shoes left?
+    - Tell me if you have [air force one]{"entity":"shoes","value":"air force one"} shoes available.
+    - Check if [air force one]{"entity":"shoes","value":"air force one"} shoes are in stock.
+    - Are [air force one]{"entity":"shoes","value":"air force one"} shoes available?
+    - I'm looking for [air force one]{"entity":"shoes","value":"air force one"} shoes, do you have them?
+    - How many [air force one]{"entity":"shoes","value":"air force one"} shoes are left in stock?
+    - Confirm if [air force one]{"entity":"shoes","value":"air force one"} [model] shoes are in store.
+    - Please check if [air force one]{"entity":"shoes","value":"air force one"}shoes are available.
+    - How's the stock for [air force one]{"entity":"shoes","value":"air force one"} shoes looking today?
+- lookup: shoes
+    - data/addidas.yml
+- lookup: shoes
+    - data/converse.yml
+- lookup: shoes
+    - data/nike.yml
+# - intent: product_inquiry
+#   examples: |
+#     - Can you tell me about the [model] shoes?
+#     - What are the features of [brand] shoes?
+#     - Tell me more about the [type] shoes.
+#     - Describe the [color] [model] shoes.
+#     - Any information on the [brand] [type] collection?
+#     - I'm interested in learning about [model] shoes.
+#     - What makes [brand] [type] shoes unique?
+#     - Give me details about [color] [type] shoes.
+#     - Can you describe the [model] shoe in detail?
+#     - Tell me about the craftsmanship of [brand] shoes.
+#     - Share some insights into [type] shoes.
+#     - What's the story behind [brand] [model] shoes?
+#     - Provide details on the materials used in [color] [type] shoes.
+#     - Explain the design philosophy of [brand] shoes.
+#     - Can you highlight the key features of [model] shoes?
+#     - Share any customer reviews on [brand] [type] shoes.
+#     - What occasions are [type] shoes suitable for?
+#     - Give me a rundown on the latest [brand] shoe designs.
+#     - I'm curious about the technology used in [model] shoes.
+#     - Are there any limited-edition [brand] shoes?
+
+- intent: price_inquiry
+  examples: |
+    - How much do the [air force one]{"entity":"shoes","value":"air force one"}shoes cost?
+    - What is the price of [air force one]{"entity":"shoes","value":"air force one"} shoes?
+    - Can you give me the price range for [air force one]{"entity":"shoes","value":"air force one"} shoes?
+    - What is the cost of [air force one]{"entity":"shoes","value":"air force one"} [color] [type] shoes?
+    - Can you provide the cost of [air force one]{"entity":"shoes","value":"air force one"} [model] shoes?
+    - How are the prices for [air force one]{"entity":"shoes","value":"air force one"} shoes determined?
+    - Let me know if there are any deals on [air force one]{"entity":"shoes","value":"air force one"} shoes.
+    - Do you offer installment plans for [air force one]{"entity":"shoes","value":"air force one"} shoes?
+    - Provide information on the price-to-quality ratio of [air force one]{"entity":"shoes","value":"air force one"} shoes.
+- lookup: shoes
+    - data/addidas.yml
+- lookup: shoes
+    - data/converse.yml
+- lookup: shoes
+    - data/nike.yml
+
+- intent: order_placement
+  examples: |
+    - How can I place an order for [model] shoes?
+    - What steps do I need to follow to order [brand] shoes?
+    - I'm interested in buying [type] shoes; how do I proceed?
+    - Can you guide me through the order process for [color] [type] shoes?
+    - I'd like to make a purchase. What's the ordering process?
+    - What information do you need from me to complete the order for [model] shoes?
+    - I want to buy [brand] shoes. What are the steps to place an order?
+    - Can I customize my order for [color] [type] shoes?
+    - I'm ready to make a purchase. How can I proceed with the order?
+    - Are there any special considerations when ordering [brand] [type] shoes?
+    - How long does it take to process an order for [model] shoes?
+    - Is there an option for expedited shipping when placing an order?
+    - I'm interested in ordering multiple pairs. Can I do that in one transaction?
+    - Tell me about any current promotions or discounts for orders.
+    - Do you offer free shipping for orders above a certain amount?
+    - Can I track my order once it's placed?
+    - What payment methods are accepted for placing an order?
+    - Can I modify my order after it has been placed?
+    - How can I cancel my order if needed?
+    - Is there a limit to the number of items I can order in one go?
+
+- intent: promotions
+  examples: |
+    - Are there any ongoing promotions or discounts at the moment?
+    - Can you share details about the current sales or promotions?
+    - I'm looking to make a purchase; are there any discounts available?
+    - Do you have a loyalty program or rewards for frequent customers?
+    - Tell me about any upcoming promotions or special events.
+    - Are there exclusive discounts for newsletter subscribers?
+    - Can I get a discount on [brand] shoes for a limited time?
+    - Do you offer seasonal discounts or promotions?
+    - How can I stay informed about the latest promotions in your store?
+    - Can I combine multiple discounts or promotions in one order?
+    - Are there any bundle deals or package discounts available?
+    - Tell me about any flash sales or time-limited promotions.
+    - Do you have special discounts for holidays or festive seasons?
+    - Are there specific days of the week when promotions are usually available?
+    - Can you provide information on any referral programs or discounts?
+    - I heard about a promotion on social media; can you tell me more?
+    - Do you offer discounts for specific customer groups, such as students?
+    - Are there any buy-one-get-one-free (BOGO) promotions currently?
+    - Can I use a discount code during the checkout process?
+    - Tell me about any clearance sales or discounted items in your store.
+    - Are there any in-store promotions that I should be aware of?
+
+- intent: returns_exchanges
+  examples: |
+    - What is your return policy?
+    - Can I exchange [brand] shoes if they don't fit?
+    - How do I return a pair of [type] shoes?
+    - Are returns accepted for sale items?
+    - Tell me about your refund process.
+    - What is the procedure for returns and exchanges?
+    - Can I return shoes if I change my mind?
+    - How long do I have to return a purchase?
+    - Explain the return policy for online orders.
+    - Are there any conditions for shoe returns?
+    - If I receive a damaged item, what is the return process?
+    - Can I return shoes without the original packaging?
+    - What information do I need for initiating a return?
+    - Do you offer prepaid return labels for online orders?
+    - Is there a restocking fee for returned items?
+    - How can I check the status of my return?
+    - Can I exchange my purchase for a different size or color?
+    - Are there any restrictions on returning personalized items?
+    - Tell me about the timeline for processing returns and issuing refunds.
+    - Do you have a return policy for international orders?
+    - Can I return a gift if it's not the right size?
+    - What is your policy regarding returns for clearance items?
+    - How does the return process work for items purchased during promotions?
+    - Are there any exceptions to your standard return policy?
+    - Can I return shoes bought online to a physical store?
+
+- intent: store_location
+  examples: |
+    - Can you recommend comfortable shoes for walking?
+    - What would you suggest for a formal occasion?
+    - Any recommendations for running shoes?
+    - Suggest some stylish [brand] shoes.
+    - What's your top pick for casual wear?
+    - Recommend shoes suitable for [occasion].
+    - I need recommendations for [type] shoes.
+    - Tell me about the best-selling shoes.
+    - Which shoes are popular among customers?
+    - Guide me to trendy and fashionable shoes.
+    - Can you recommend a versatile shoe for everyday use?
+    - I'm attending a wedding; suggest elegant shoes for the occasion.
+    
+- intent: order_tracking
+  examples: |
+    - How can I track my order?
+    - Where is my package?
+    - Can you provide the status of my order?
+    - Give me the tracking information.
+    - When will my order be delivered?
+    - Check the status of my recent order.
+    - Provide updates on my purchase.
+    - I want to know the delivery status.
+    - Can I track my order in real-time?
+    - Tell me about the shipping progress.
+    - Is there an estimated delivery date for my order?
+    - How long does it usually take for orders to be shipped?
+    - Can I receive notifications about my order status?
+    - Is there an option for expedited shipping?
+    - What courier service is used for order deliveries?
+    - Can I change the delivery address after placing the order?
+    - Do you provide a tracking number via email?
+    - Are there any shipping fees for standard delivery?
+    - Can I request a specific delivery time for my order?
+    - What happens if I'm not available to receive the delivery?
+    - How can I report an issue with my delivery?
+    - Is there a way to reroute my package to a different address?
+    - Do you offer international shipping with order tracking?
+    - Can I track multiple orders from the same account?
+    - What should I do if the tracking information is not updating?
+
+- intent: google_lens
+  examples: |
+    - Would you like to use Google Lens for a visual search?
+    - Are you interested in exploring with Google Lens for visual search?
+    - Want to try Google Lens for a visual search?
+    - Are you open to using Google Lens to search visually?
+    - Curious about trying Google Lens for visual recognition?
+    - Interested in exploring Google Lens for visual information?
+    - Do you want to use Google Lens for a visual search experience?
+    - Considering trying Google Lens for visual discovery?
+    - Would you like assistance from Google Lens for visual searches?
+    - Open to using Google Lens for finding information through images?
+    - Are you aware of Google Lens? It can help with visual searches.
+    - Interested in the features of Google Lens for visual exploration?
+    - Want to experience visual search capabilities with Google Lens?
+    - Curious about trying Google Lens for image-based searches?
+    - Considering using Google Lens for searching by image?
+
+- intent: inquire_quality_brands
+  examples: |
+    - Can you recommend any brands known for their quality products?
+    - Are there specific brands known for producing high-quality items?
+    - Which brands are recognized for their commitment to quality?
+    - Do you know of any brands that are known for their top-notch products?
+    - Can you suggest brands with a reputation for quality?
+    - Are there any brands that stand out for their consistent quality?
+    - Which brands are well-regarded for the quality of their offerings?
+    - Do you have recommendations for brands with a focus on quality?
+    - Are there brands known for delivering high-quality goods?
+    - Can you name some brands that are synonymous with quality?
+
+# - intent: inquire_unique_design_brands
+#   examples: |
+#     - Are there brands known for their unique and distinctive designs?
+#     - Can you suggest brands with a reputation for creative and unique products?
+#     - Which brands are recognized for their innovative and unique designs?
+#     - Do you know of any brands celebrated for their one-of-a-kind designs?
+#     - Can you recommend brands that stand out for their unique product aesthetics?
+#     - Are there any brands that are known for their original and unique designs?
+#     - Which brands are well-regarded for their out-of-the-box and unique creations?
+#     - Do you have suggestions for brands with a focus on unique and innovative designs?
+#     - Are there brands known for their unconventional and standout designs?
+#     - Can you name some brands that are synonymous with unique product aesthetics?
+
+- intent: inquire_repair_policy
+  examples: |
+    - What is the store's policy on repairing shoes?
+    - Can you provide information on how shoe repairs are handled?
+    - How does the store handle shoe repair requests?
+    - What is the procedure for getting shoes repaired from your store?
+    - Is there a specific policy for shoe repairs at your store?
+    - Can you explain the process of repairing shoes purchased here?
+    - What are the terms and conditions for shoe repairs at your store?
+    - How does your store handle warranty and repairs for shoes?
+    - Are there any fees associated with repairing shoes bought from your store?
+    - Can you clarify the store's policy on repairing footwear?
+    - Is there a specific timeline for shoe repairs at your store?
+    - Do you offer free repairs for shoes purchased from your store?
+    - Can you provide details on the warranty and repair coverage for shoes?
+    - What steps should I take if I need to have my shoes repaired from your store?
+    - Is there a dedicated service for shoe repairs at your store?
+
+- intent: inquire_about_discounts_on_new_arrivals
+  examples: |
+    - Are there any discounts available for new arrivals?
+    - Can I get a discount on recently added shoe styles?
+    - Do you offer promotional pricing for new arrivals?
+    - Are there any special offers on the latest shoe arrivals?
+    - Can I use any discount codes for new shoes in the collection?
+    - Is there a sale or promotion for recently introduced shoe models?
+    - Are there any upcoming discounts or promotions for new arrivals?
+    - Can I expect any special pricing for the newest shoe releases?
+    - Are there loyalty program benefits for purchasing new arrivals?
+    - How can I find out about discounts on the latest shoe arrivals?

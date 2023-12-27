@@ -1,0 +1,50 @@
+version: "3.1"
+nlu:
+  - lookup: shoes
+    examples: |
+      - Chuck Taylor All Star
+      - Chuck 70
+      - Converse One Star
+      - Converse Jack Purcell
+      - Converse Run Star Hike
+      - Converse ERX 260
+      - Converse Pro Leather
+      - Converse Fastbreak
+      - Converse Weapon
+      - Converse Auckland Racer
+      - Converse CONS CTAS Pro
+      - Converse CONS Breakpoint Pro
+      - Converse CONS One Star Pro
+      - Converse CONS JP Pro Ox
+      - Converse CONS Louie Lopez Pro
+      - Converse CONS Metric CLS
+      - Converse CONS Metric CLS Mid
+      - Converse CONS Run Star Motion
+      - Converse CONS Checkpoint Pro
+      - Converse CONS Sumner
+      - Converse CONS Weapon Mid
+      - Converse CONS Fastbreak Mid
+      - Converse Chuck Taylor All Star II
+      - One Star
+      - Jack Purcell
+      - Run Star Hike
+      - ERX 260
+      - Pro Leather
+      - Fastbreak
+      - Weapon
+      - Auckland Racer
+      - CONS CTAS Pro
+      - CONS Breakpoint Pro
+      - CONS One Star Pro
+      - CONS JP Pro Ox
+      - CONS Louie Lopez Pro
+      - CONS Metric CLS
+      - CONS Metric CLS Mid
+      - CONS Run Star Motion
+      - CONS Checkpoint Pro
+      - CONS Sumner
+      - CONS Weapon Mid
+      - CONS Fastbreak Mid
+      - Chuck Taylor All Star II
+
+     

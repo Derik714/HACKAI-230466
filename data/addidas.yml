@@ -1,0 +1,220 @@
+version: "3.1"
+nlu:
+  - lookup: shoes
+    examples: |
+      - Ultraboost
+      - NMD
+      - Superstar
+      - Stan Smith
+      - Yeezy Boost 350
+      - Yeezy Boost 700
+      - Yeezy 500
+      - EQT Support
+      - Predator Freak
+      - Adilette Slide
+      - Gazelle
+      - Falcon
+      - Ozweego
+      - Sobakov
+      - Dame 6
+      - Harden Vol. 4
+      - Solar Hu
+      - Terrex Free Hiker
+      - ZX Flux
+      - Prophere
+      - Futurecraft 4D
+      - AlphaEdge 4D
+      - Human Race NMD
+      - Pharrell Williams x Adidas Originals Collection
+      - Dragon Ball Z x Adidas Collection
+      - Neighborhood x Adidas Collaboration
+      - Adidas Consortium releases
+      - Limited Edition Anniversary Releases
+      - Adidas Originals Spezial Series
+      - Adidas Y-3 Collection
+      - Samba
+      - Campus
+      - Tubular
+      - Continental 80
+      - Iniki Runner
+      - EQT Racing ADV
+      - Handball Spezial
+      - Micropacer
+      - Marathon TR
+      - City Series (e.g., London, Berlin, Stockholm)
+      - Yung-1
+      - Temper Run
+      - Lxcon
+      - Supercourt
+      - A.R. Trainer
+      - ZX 8000
+      - ZX 5000
+      - POD System
+      - Torsion Comp
+      - Rivalry
+      - Top Ten
+      - R1, R2, R3
+      - Y-3 Qasa High
+      - ZX 700
+      - Ozweego Tech
+      - LA Trainer
+      - Crazylight Boost
+      - Pure Boost
+      - ClimaCool
+      - I-5923 (Iniki)
+      - EQT Cushion ADV
+      - Yung-96
+      - Adizero Prime Boost
+      - Climacool 1
+      - EQT Racing 91/16
+      - EQT Support 93/17
+      - EQT Support ADV
+      - Tubular Doom
+      - Tubular Shadow
+      - Tubular Radial
+      - Tubular Invader
+      - Tubular Rise
+      - Kamanda
+      - Futurepacer
+      - 4D Run 1.0
+      - ZX Torsion
+      - ZX 4000
+      - Lacombe
+      - Tephra Runner
+      - ZX 2K Boost
+      - Magmur Runner
+      - Handball Top
+      - Response CL
+      - Ultraboost DNA
+      - A-ZX Series
+      - ZX 10/8
+      - Superknot
+      - Yeezy Quantum
+      - Yeezy Powerphase
+      - OZWEEGO Tech
+      - Forum
+      - Pro Model
+      - SL 72
+      - SL 80
+      - Yeezy Boost 380
+      - Nite Jogger
+      - Rivalry RM
+      - LXCON 94
+      - Ultraboost
+      - NMD
+      - Superstar
+      - Stan Smith
+      - Yeezy Boost 350
+      - Yeezy Boost 700
+      - Yeezy 500
+      - EQT Support
+      - Predator Freak
+      - Adilette Slide
+      - Gazelle
+      - Falcon
+      - Ozweego
+      - Sobakov
+      - Dame 6
+      - Harden Vol. 4
+      - Solar Hu
+      - Terrex Free Hiker
+      - ZX Flux
+      - Prophere
+      - Futurecraft 4D
+      - AlphaEdge 4D
+      - Human Race NMD
+      - Pharrell Williams x Adidas Originals Collection
+      - Dragon Ball Z x Adidas Collection
+      - Neighborhood x Adidas Collaboration
+      - Adidas Consortium releases
+      - Limited Edition Anniversary Releases
+      - Adidas Originals Spezial Series
+      - Samba
+      - Campus
+      - Tubular
+      - Continental 80
+      - Iniki Runner
+      - EQT Racing ADV
+      - Handball Spezial
+      - Micropacer
+      - Marathon TR
+      - City Series (e.g., London, Berlin, Stockholm)
+      - Yung-1
+      - Temper Run
+      - Lxcon
+      - Supercourt
+      - A.R. Trainer
+      - ZX 8000
+      - ZX 5000
+      - POD System
+      - Torsion Comp
+      - Rivalry
+      - Top Ten
+      - R1, R2, R3
+      - Samba
+      - Campus
+      - Tubular
+      - Continental 80
+      - Iniki Runner
+      - EQT Racing ADV
+      - Handball Spezial
+      - Micropacer
+      - Marathon TR
+      - City Series (e.g., London, Berlin, Stockholm)
+      - Yung-1
+      - Temper Run
+      - Lxcon
+      - Supercourt
+      - A.R. Trainer
+      - ZX 8000
+      - ZX 5000
+      - POD System
+      - Torsion Comp
+      - Rivalry
+      - Top Ten
+      - R1, R2, R3
+      - Samba
+      - Campus
+      - Tubular
+      - Continental 80
+      - Iniki Runner
+      - EQT Racing ADV
+      - Handball Spezial
+      - Micropacer
+      - Marathon TR
+      - City Series (e.g., London, Berlin, Stockholm)
+      - Yung-1
+      - Temper Run
+      - Lxcon
+      - Supercourt
+      - A.R. Trainer
+      - ZX 8000
+      - ZX 5000
+      - POD System
+      - Torsion Comp
+      - Rivalry
+      - Top Ten
+      - R1, R2, R3
+      - Yeezy Quantum
+      - Yeezy Powerphase
+      - OZWEEGO Tech
+      - Forum
+      - Pro Model
+      - SL 72
+      - SL 80
+      - Yeezy Boost 380
+      - Nite Jogger
+      - Rivalry RM
+      - LXCON 94
+      - Yeezy Boost 451
+      - Yeezy 700 V3
+      - Yeezy Boost 500
+      - ZX 10000
+      - ZX 2K 4D
+      - ZX 8000 LEGO
+      - Futurecraft Loop
+      - Futurecraft MFG
+      - Futurecraft Tailored Fibre
+      - Futurecraft Biofabric
+      - Futurecraft Leather
+      - Pharrell Williams x Adidas Solar Hu Glide
