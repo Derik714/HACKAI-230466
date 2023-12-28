@@ -65,7 +65,7 @@ Open dedicated terminals for each command:
 
    
 
-	    pip install <required-packages>
+	    pip install rasa==3.6.13 uagents requests
 
    
 
